@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JavaScript String </title>
+</head>
+<body>
+
+
+  	<script type="text/javascript">
+  		
+  		var str =new String("Hello i am Arnob");
+  		document.write("var str = "+str+"<br/>");
+  		var str1 =new String("I am Form Dhaka");
+  		document.write("var str1 = "+str1+"<br/>");
+  		document.write("str.charAt(0) =  "+str.charAt(0) +"</br>");
+  		document.write("str.charCodeAt(0) = "+str.charCodeAt(0)+"</br>");
+
+  		var str2=str.concat(str1);
+
+  		document.write("str.concat(str1) = "+str2+"</br>");
+
+  		document.write("str2.charAt(11) =  "+str2.charAt(11) +"</br>");
+  		//document.write("str2.index("am") =  "+str1.indexOf("am") +"</br>");
+  		//var index =str.indexOf("am");
+  		//document.write("str.indexOf("am") = "+index+"<br/>");
+
+  		var index = str1.indexOf( "am" );
+        document.write("indexOf found String :" + index );
+        document.write("<br/>");
+        document.write("lastIndexOf found String :" +str1.lastIndexOf("Dhaka")+"<br/>" );
+
+
+        var re = /apples/gi;
+       document.write("var re "+re+"<br/>");
+        var str = "Apples are round, and apples are juicy.";
+        document.write("var str = "+str+"<br/>");
+        var newstr = str.replace(re, "oranges");
+
+        document.write(newstr+"<br/>");
+        var ra=/oranges/gi;
+
+        var fk = newstr.replace(ra,"books");
+        document.write(fk);
+        document.write("<br/>"+"str.search(re) = "+"<br/>");
+
+        var re = /apples/gi;
+		var str = "Apples are round, and apples are juicy.";
+		if ( str.search(re) == -1 )
+		{
+		document.write("Does not contain Apples" );
+		}
+		else
+		{
+		document.write("Contains Apples"+"<br/>" );
+		}
+        
+        var sliced = str.slice(3,-2);
+        document.write( sliced +"<br/>"+"str2.split(seperator,limit)"+" <br/>");
+
+        var split= str2.split(" ",5);
+        document.write(split+"<br/>");
+        document.write("var str1 = "+str1+"<br/>")
+        document.write("substr(1,5): " + str1.substr(1,5)+"<br/>");
+        document.write("substring (1,5): index count kore" + str1.substring(1,5));
+        document.write(" <br/> upper case :"+str1.toUpperCase());
+        document.write(" <br/> lower case :"+str1.toLowerCase());
+
+
+
+
+
+  	</script>
+</body>
+</html>
